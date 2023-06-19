@@ -1,0 +1,31 @@
+.wrapper {
+	position: relative;
+	display: flex;
+	align-items: center;
+	width: 100%;
+
+	> .input {
+		padding: 17px 50px;
+		border: 1px solid #bebebe;
+		border-radius: 10px;
+		width: 100%;
+		&:hover,
+		&:focus {
+			border-color: #212121;
+		}
+		&:hover + .icon,
+		&:focus + .icon {
+			color: #212121;
+		}
+		&:disabled {
+			background-color: #828282;
+			color: #828282;
+		}
+	}
+	> .icon {
+		font-size: 20px;
+		color: #bebebe;
+		position: absolute;
+		left: 16px;
+	}
+}

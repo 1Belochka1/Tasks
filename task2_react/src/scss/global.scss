@@ -1,0 +1,19 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: none;
+	outline: none;
+	box-sizing: border-box;
+}
+
+body,
+html {
+	font-family: 'Roboto', sans-serif;
+	height: 100%;
+}
+#root {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+}

@@ -1,0 +1,25 @@
+.inputFile {
+	width: 365px;
+	height: 57px;
+	> [type='file'] {
+		height: 0;
+		overflow: hidden;
+		width: 0;
+	}
+	label {
+		width: 100%;
+		height: 100%;
+		cursor: pointer;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		color: var(--color-secondary);
+		> div {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			gap: 5px;
+		}
+	}
+}

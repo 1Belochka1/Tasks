@@ -1,0 +1,62 @@
+.wrapper {
+	padding: 100px 250px;
+	// /* display: none; */
+	background-image: url('/src/assets/kaska.png');
+	background-repeat: no-repeat;
+	background-position: right;
+	background-size: contain;
+
+	> .content {
+		max-width: 890px;
+		> .title {
+			font-size: 48px;
+			font-weight: 800;
+			color: var(--color-primary-title);
+
+			margin-bottom: 36px;
+		}
+		> .description {
+			color: var(--color-primary);
+			font-size: 20px;
+			font-weight: 500;
+			line-height: 36px;
+
+			margin-bottom: 36px;
+			> p:first-child {
+				margin-bottom: 17px;
+			}
+			> .list {
+				list-style: square;
+				color: var(--color-secondary);
+
+				margin-left: 30px;
+
+				> .item > span {
+					color: var(--color-primary);
+					> span {
+						color: var(--color-secondary);
+					}
+				}
+			}
+		}
+		> .sendBtn {
+			font-weight: 700;
+			font-size: 18px;
+
+			padding: 16px 40px;
+
+			color: #fff;
+			background-color: var(--color-secondary);
+
+			cursor: pointer;
+
+			border-radius: 2px;
+			&:hover {
+				background-color: #3e5eb1;
+			}
+			&:active {
+				background-color: #1c2a50;
+			}
+		}
+	}
+}
